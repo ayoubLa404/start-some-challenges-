@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-dark: hsl(0, 0%, 20%);
+  --color-grey: hsl(0, 0%, 12%);
+  --color-black: hsl(0, 0%, 8%);
+
+  --fontSize: '14px';
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.el {
+  @apply bg-dark py-3 rounded-lg cursor-pointer duration-300 hover:bg-primary hover:text-dark  font-semibold text-sm;
+}
+
